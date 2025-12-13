@@ -1,0 +1,21 @@
+{
+  "active_index": "multi_default",
+  "indices": {
+    "multi_default": {
+      "faiss_path": "/not/a/real/path.faiss",
+      "meta_path": "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default/multi_meta.parquet",
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "metric": "ip",
+      "normalize_query": true,
+      "efSearch": 128
+    },
+    "single_wiki": {
+      "faiss_path": "/content/drive/MyDrive/AMS 560 PROJECT/indices/wikipedia/wiki_hnsw_M32.faiss",
+      "meta_path": "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/wikipedia/wiki_meta.parquet",
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "metric": "ip",
+      "normalize_query": true,
+      "efSearch": 128
+    }
+  }
+}

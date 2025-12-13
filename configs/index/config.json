@@ -1,0 +1,82 @@
+{
+  "config_version": "1",
+  "active_index": "multi_chroma",
+  "indices": {
+    "multi_default": {
+      "backend": "faiss",
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "normalize_query": true,
+      "metric": "ip",
+      "index_metric": "ip",
+      "vector_normed": true,
+      "efSearch": 128,
+      "faiss_path": "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default/multi_hnsw.faiss",
+      "meta_path": "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default/multi_meta.parquet",
+      "extras": {
+        "faiss_num_threads": 2,
+        "text_fields": [
+          "chunk_text",
+          "text",
+          "preview"
+        ]
+      }
+    },
+    "multi_sharded": {
+      "backend": "faiss",
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "normalize_query": true,
+      "metric": "ip",
+      "index_metric": "ip",
+      "vector_normed": true,
+      "efSearch": 128,
+      "index_paths": [
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_000.faiss",
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_001.faiss",
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_002.faiss",
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_003.faiss",
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_004.faiss",
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_005.faiss",
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_006.faiss",
+        "/content/drive/MyDrive/AMS 560 PROJECT/indices/multi_default_sharded/shard_007.faiss"
+      ],
+      "meta_paths": [
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_000.parquet",
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_001.parquet",
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_002.parquet",
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_003.parquet",
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_004.parquet",
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_005.parquet",
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_006.parquet",
+        "/content/drive/MyDrive/AMS 560 PROJECT/data/embeddings/multi_default_sharded/meta_shard_007.parquet"
+      ],
+      "extras": {
+        "alpha": 3,
+        "dedup_by_uid": true,
+        "faiss_num_threads": 2,
+        "text_fields": [
+          "chunk_text",
+          "text",
+          "preview"
+        ]
+      }
+    },
+    "multi_chroma": {
+      "backend": "chroma",
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "normalize_query": true,
+      "metric": "ip",
+      "efSearch": 64,
+      "extras": {
+        "collection": "multi_default",
+        "persist_dir": "indices/chroma_store",
+        "alpha": 3,
+        "dedup_by_uid": true,
+        "text_fields": [
+          "chunk_text",
+          "text",
+          "preview"
+        ]
+      }
+    }
+  }
+}
