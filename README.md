@@ -95,22 +95,22 @@ python bench.py \
 ```
 
 ## Colab files to run and view entire code:
-Preprocessing - https://drive.google.com/file/d/1IxK2Ql38tuuGvmDA4EhNc6L1_cXN8Gpi
-Retierval - https://drive.google.com/file/d/1gcCB3XfqrcLgF7wx6jgvMmKzWZYT33wg
-Scaling - https://drive.google.com/file/d/1ChXLOH4z25YuRObxoK9VcUiig6D12bcv
-Visualization - https://drive.google.com/file/d/1aj9gXsHppXlSIdpJ55W6mtnAZjc3WODR
+1. Preprocessing - https://drive.google.com/file/d/1IxK2Ql38tuuGvmDA4EhNc6L1_cXN8Gpi
+2. Retierval - https://drive.google.com/file/d/1gcCB3XfqrcLgF7wx6jgvMmKzWZYT33wg
+3. Scaling - https://drive.google.com/file/d/1ChXLOH4z25YuRObxoK9VcUiig6D12bcv
+4. Visualization - https://drive.google.com/file/d/1aj9gXsHppXlSIdpJ55W6mtnAZjc3WODR
 
 ## Team & Contributions
 
-Shruti Jagdale – Data preprocessing, embedding generation, FAISS single-node indexing, visualizations
-Kashish Deepak Lalwani – Backend-agnostic retrieval runner and execution layer
-Garima Prachi – Unified backend infrastructure, FAISS (single & sharded), Spark-based distributed retrieval, global Top-K merging
-Quynh Ho – Experiment orchestration, RAG vs non-RAG pipelines, reproducibility
-Elita Hazel Gorimanikonda – Benchmark execution, metric aggregation, performance analysis
+- Shruti Jagdale – Data preprocessing, embedding generation, FAISS single-node indexing, visualizations
+- Kashish Deepak Lalwani – Backend-agnostic retrieval runner and execution layer
+- Garima Prachi – Unified backend infrastructure, FAISS (single & sharded), Spark-based distributed retrieval, global Top-K merging
+- Quynh Ho – Experiment orchestration, RAG vs non-RAG pipelines, reproducibility
+- Elita Hazel Gorimanikonda – Benchmark execution, metric aggregation, performance analysis
 
 ## 🚀 Future Work
 
-GPU-accelerated FAISS
-Retrieval quality metrics (MRR, nDCG)
-Vector compression and learned indexes
-Multi-node and cluster-scale evaluation
+- GPU-accelerated FAISS
+- Retrieval quality metrics (MRR, nDCG)
+- Vector compression and learned indexes
+- Multi-node and cluster-scale evaluation
