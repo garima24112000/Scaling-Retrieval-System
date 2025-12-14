@@ -66,6 +66,7 @@ A unified benchmarking harness (`bench.py`) orchestrates all experiments using *
 
 ## 📁 Repository Structure
 Scaling-Retrieval-System/
+```
 ├── bench.py # Unified benchmarking entry point
 ├── configs/ # Experiment and backend configs
 ├── data/
@@ -82,7 +83,7 @@ Scaling-Retrieval-System/
 │ ├── csv/ # Aggregated metrics
 ├── plots/ # Result visualizations
 └── README.md
-
+```
 ## ▶️ How to Run
 
 ### Run a Benchmark
